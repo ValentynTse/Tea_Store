@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,regular,600,300italic&display=swap");
 
 @import url("https://fonts.googleapis.com/css?family=Cormorant:regular,300italic&display=swap");
@@ -223,67 +221,6 @@ body {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.rating {
-  display: flex;
-  align-items: flex-end;
-  font-size: 2.25rem;
-  line-height: 0.75;
-  transition: opacity 0.3s ease 0s;
-}
-
-.rating.rating_sending {
-  opacity: 0.2;
-}
-
-.rating__body {
-  position: relative;
-}
-
-.rating__body::before {
-  content: "★★★★★";
-  display: block;
-}
-
-.rating__active {
-  position: absolute;
-  width: 0%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-}
-
-.rating__active::before {
-  content: "★★★★★";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  color: #ffd388;
-}
-
-.rating__items {
-  display: flex;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-.rating__item {
-  flex: 0 0 20%;
-  height: 100%;
-  opacity: 0;
-}
-
-.rating__value {
-  font-size: 50%;
-  line-height: 1;
-  padding-left: 10px;
 }
 
 .section-title {
@@ -534,6 +471,10 @@ body {
   /* 22px/16 */
 }
 
+.products-footer__link:hover {
+  text-decoration: underline;
+}
+
 .company-footer__list {
   display: flex;
   flex-direction: column;
@@ -544,6 +485,10 @@ body {
   font-weight: 300;
   line-height: 137.5%;
   /* 22px/16 */
+}
+
+.company-footer__link:hover {
+  text-decoration: underline;
 }
 
 .blockquote-footer__text {
@@ -582,6 +527,14 @@ body {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
   margin-bottom: 1.25rem;
+}
+
+.contacts__logo {
+  width: 3.5625rem;
+}
+
+.contacts__logo img {
+  max-width: 100%;
 }
 
 .contacts__list {
